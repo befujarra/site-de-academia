@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("assets/bg.jpg");
   background-repeat: repeat;
   font-family: "roboto", sans-serif;
@@ -30,6 +30,9 @@ header img {
   margin-right: 100px;
 }
 
+nav a:hover {
+  color: rgb(244, 160, 25);
+}
 nav a {
   color: white;
   text-decoration: none;
@@ -37,7 +40,8 @@ nav a {
 
 .content-principal {
   text-align: center;
-  margin-top: 300px;
+  margin-top: 150px;
+  margin-bottom: 100px;
   color: white;
 }
 
@@ -63,7 +67,13 @@ nav a {
   border: 2px solid white;
   border-radius: 35px;
   font-size: 15px;
+  background-color: rgb(244, 160, 25, 0.6);
+}
+
+.buttons-content1:hover,
+.buttons-content2:hover {
   background-color: rgba(255, 255, 255, 0.2);
+  transition: 0.6s;
 }
 
 .buttons-content2 {
@@ -73,12 +83,30 @@ nav a {
   border: 2px solid white;
   border-radius: 35px;
   font-size: 15px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgb(244, 160, 25, 0.6);
+}
+
+.rodape {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 200px;
+}
+
+.rodape img {
+  width: 120px;
+}
+
+.rodape p {
+  color: white;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
       url("assets/bg.jpg");
     background-size: 1280px 1280px;
   }
@@ -117,7 +145,7 @@ nav a {
 
 @media screen and (max-width: 767px) {
   body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
       url("assets/bg.jpg");
     background-size: 800px 840px;
   }
@@ -164,7 +192,7 @@ nav a {
   }
 }
 
-/*------------------------------------------PAGINA INICIAL-------------------------------------*/
+/*------------------------------------------Aula experimental-------------------------------------*/
 
 .content-form {
   display: flex;
@@ -179,6 +207,7 @@ nav a {
   padding: 40px;
   color: white;
   background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 5px rgb(82, 82, 82);
 }
 
 .h1-form {
@@ -188,12 +217,267 @@ nav a {
 }
 .button-form {
   font-size: 15px;
+  font-weight: bold;
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
+  background-color: rgb(244, 160, 25, 0.6);
   padding: 10px;
   margin-top: 15px;
   display: flex;
   justify-content: center;
   border: 2px solid white;
   border-radius: 15px;
+}
+.button-form:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: 0.6s;
+}
+/*------------------------------------------Planos-------------------------------------*/
+
+.beneficios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  margin-top: 100px;
+}
+
+.beneficios-1,
+.beneficios-2 {
+  padding: 70px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 5px rgb(82, 82, 82);
+}
+.titulo-plano {
+  color: rgb(244, 160, 25);
+  font-weight: 600;
+}
+
+@media (320px <= width <= 768px) {
+  body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+      url("assets/bg.jpg");
+    background-size: 1300px 1400px;
+    background-repeat: no-repeat;
+  }
+  .beneficios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 100px;
+  }
+}
+/*------------------------------------------Serviços-------------------------------------*/
+.tittle-serviços {
+  margin: 20px 0 0 20px;
+  color: rgb(244, 160, 25);
+  text-align: center;
+}
+.tittle-serviços h3 {
+  color: white;
+}
+.content-serviços {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.section-serviços {
+  background-color: rgba(255, 255, 255, 0.2);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 70px;
+}
+
+.section-serviços a {
+  color: white;
+  text-decoration: none;
+}
+.section-serviços a:hover {
+  color: rgb(244, 160, 25);
+  text-decoration: none;
+}
+.section-serviços img {
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+.aside-serviços {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 50px;
+  margin-top: 20px auto auto 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.aside-serviços a {
+  color: white;
+  text-decoration: none;
+}
+.aside-serviços a:hover {
+  color: rgb(244, 160, 25);
+  text-decoration: none;
+}
+.aside-serviços img {
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+.item {
+  padding: 30px;
+}
+
+.tittle-grid {
+  color: rgb(244, 160, 25);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1520px) {
+  .content-serviços {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: baseline;
+    gap: 20px;
+  }
+
+  .section-serviços {
+    background-color: rgba(255, 255, 255, 0.2);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 70px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .body-services {
+    background-color: black;
+  }
+  .content-serviços {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    gap: 20px;
+    font-size: 25px;
+  }
+  .section-serviços {
+    gap: 5px;
+    padding: 10px;
+  }
+  .aside-serviços {
+    display: grid;
+    padding: 20px 40px 20px 40px;
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .item {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .body-services {
+    background-color: black;
+  }
+  .content-serviços {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    gap: 5px;
+    font-size: 15px;
+  }
+  .section-serviços {
+    gap: 5px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 10px;
+  }
+  .aside-serviços {
+    display: grid;
+    border-radius: 10px;
+    padding: 13px;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .item {
+    padding: 10px;
+  }
+}
+
+/*------------------------------------------Pagina de contato-------------------------------------*/
+.body-contato {
+  background-color: black;
+}
+.content-contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.img-contato {
+  margin-top: 30px;
+  width: 40vh;
+
+  box-shadow: 5px 5px 5px rgb(82, 82, 82);
+}
+
+.container-contato {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 5px rgb(82, 82, 82);
+}
+.container-contato h1 {
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+.container-contato span {
+  color: rgb(244, 160, 25);
+}
+.button-contato {
+  text-align: center;
+  padding: 20px 75px 20px 75px;
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 35px;
+  font-size: 15px;
+  background-color: rgb(244, 160, 25, 0.6);
+}
+
+@media screen and (min-width: 1140px) {
+  .content-contato {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+  }
+  .img-contato {
+    margin-top: 30px;
+    width: 60vh;
+  }
 }
