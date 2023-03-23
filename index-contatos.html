@@ -7,16 +7,61 @@
     <link rel="stylesheet" href="style.css" />
     <title>ACADEMIA</title>
   </head>
-  <body>
+  <body class="body-contato">
     <header>
-      <img src="assets/logoacad.svg" alt="logo de academia" />
+      <a href="index.html">
+        <img src="assets/logoacad.svg" alt="logo de academia"
+      /></a>
       <nav class="navegadores">
         <a href="index.html">HOME</a>
         <a href="index-serviços.html">SERVIÇOS</a>
-        <a href="index-typeaulas.html">AULAS</a>
+
         <a href="index-agenda.html">AGENDA</a>
         <a href="index-contatos.html">CONTATOS</a>
       </nav>
     </header>
+    <main class="content-contato">
+      <img
+        src="assets/foto-contatos.png"
+        alt="imagem de desenho de academia"
+        class="img-contato"
+      />
+
+      <section class="container-contato">
+        <h1>Entre em <span>Contato</span></h1>
+        <br /><br />
+        <input
+          type="text"
+          name="nome"
+          id="nome"
+          placeholder="Escreva seu nome aqui"
+          required
+        />
+        <br /><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Escreva o seu melhor email"
+          required
+        />
+        <br /><br />
+        <textarea
+          name="message"
+          rows="10"
+          cols="30"
+          placeholder="Escreva sua mensagem aqui"
+          required
+        ></textarea>
+        <br /><br />
+        <a href="#" class="button-contato">ENVIAR</a>
+      </section>
+    </main>
+    <footer>
+      <div class="rodape">
+        <img src="assets/logoacad.svg" alt="logo de academia" />
+        <p>Avenida das letras Nº384</p>
+      </div>
+    </footer>
   </body>
 </html>
